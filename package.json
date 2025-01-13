@@ -1,0 +1,13 @@
+{
+  "name": "ga4_vlad",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build step reuqired\""
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
