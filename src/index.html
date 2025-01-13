@@ -7,6 +7,18 @@
   <title>Tab title</title>
 </head>
 <body>
-  <h1>This is an HTML content!</h1>
+    <h2>Типова форма</h2>
+    <form action="/submit" method="POST">
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Електронна пошта:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Відправити">
+    </form>
 </body>
 </html>
