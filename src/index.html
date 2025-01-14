@@ -4,9 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Tab title</title>
+  <title>Vlad is testing GA4</title>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NLK80R83J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8NLK80R83J');
+</script>
 </head>
 <body>
-  <h1>This is an HTML content!</h1>
+  <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">GA4
+            </div>
+
+            <nav class="nav">
+                <a class="nav__link" href="#about">About</a>
+                <a class="nav__link" href="#need__to__know">Need to know</a>
+                <a class="nav__link" href="#form">Form</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="intro" id="intro">
+    <div class="container">
+        <h1 class="intro__text">Google <br>Analytics 4</h1>
+        <h2 class="intro__subtext">Time to practise</h2>
+    </div>
+</div>
+
+<div class="container">
+  <div class="form">
+      <h2>Типова форма</h2>
+      <form action="/submit" method="POST">
+          <label for="name">Ім'я:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Електронна пошта:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Повідомлення:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+          <input type="submit" value="Відправити">
+      </form>
+  </div>
+</div>
+
 </body>
 </html>
